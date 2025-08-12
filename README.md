@@ -21,7 +21,7 @@ A College Enquiry AI Chatbot built with Flask, Firebase, and LLaMA 3 integration
 
 1. Clone this repository
    ```bash
-   git clone https://github.com/<your-username>/QueryVerse-AI.git
+   git clone https://github.com/aanchalmore2005/QueryVerse-AI.git
    cd QueryVerse-AI
    ```
    
@@ -43,5 +43,6 @@ A College Enquiry AI Chatbot built with Flask, Firebase, and LLaMA 3 integration
    ```
 
    Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
 
 
