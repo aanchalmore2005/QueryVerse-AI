@@ -12,7 +12,7 @@ A College Enquiry AI Chatbot built with Flask, Firebase, and LLaMA 3 integration
 - Dark Mode UI for a modern look
 
 # Project Structure
-QueryVerse-AI/
+**QueryVerse-AI/**
 │── app.py # Main Flask application
 │── requirements.txt # Python dependencies
 │── static/ # CSS, JS, and images
@@ -26,15 +26,22 @@ QueryVerse-AI/
    ```
    
 2. Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # On Mac/Linux
-venv\Scripts\activate      # On Windows
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Mac/Linux
+   venv\Scripts\activate      # On Windows
+   ```
 
 3. Install dependencies
+   ```bash
    pip install -r requirements.txt
+   ```
 
 4. Run the application
+   ```bash
    python merged_app.py
+   ```
 
    Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
 
