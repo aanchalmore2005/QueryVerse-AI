@@ -31,8 +31,21 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 # Initialize SQLAlchemy
 db = SQLAlchemy(app)
 
-# Initialize Firebase
-cred = credentials.Certificate("firebase-credentials.json")
+# # Initialize Firebase
+# cred = credentials.Certificate("firebase-credentials.json")
+# firebase_admin.initialize_app(cred)
+# firestore_db = firestore.client()
+
+# Initialize Firebase (Render secret file compatible)
+secret_path = "/etc/secrets/firebase-credentials.json"  # Must match secret file name in Render
+
+if os.path.exists(secret_path):
+    # Use Render secret file
+    cred = credentials.Certificate(secret_path)
+else:
+    # Use local file only for development (not in GitHub)
+    cred = credentials.Certificate("firebase-credentials.json")
+
 firebase_admin.initialize_app(cred)
 firestore_db = firestore.client()
 
