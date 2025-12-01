@@ -4,5 +4,7 @@ services:
     env: python
     region: oregon
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn merged_app:app
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn merged_app:app"
+    runtime: python3
+    pythonVersion: 3.11.8
