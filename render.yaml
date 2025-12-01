@@ -2,7 +2,8 @@ services:
   - type: web
     name: queryverse
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn merged_app:app"
-    build:
-      pythonVersion: 3.11.8
+    region: oregon
+    plan: free
+    pythonVersion: 3.11.8
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn merged_app:app
